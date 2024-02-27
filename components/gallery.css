@@ -1,0 +1,31 @@
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Gap between images */
+    padding: 20px; /* Padding around the gallery */
+    background-image: url('../img/20852675_6345959.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.image {
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 10px 14px 10px rgba(10, 10, 10, 0.626); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.image img {
+    width: 100%; /* Make images fill their containers */
+    display: block; /* Remove extra space below images */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.image:hover img {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
